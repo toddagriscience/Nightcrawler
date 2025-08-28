@@ -22,12 +22,18 @@
     "build-storybook": "storybook build",
     "prepare": "husky",
     "ci": "npm run type-check && npm run lint && npm run test && npm run build",
-    "validate": "npm run format:check && npm run ci"
+    "validate": "npm run format:check && npm run ci",
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy",
+    "convex:import": "convex import --table tasks sampleData.jsonl"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.31.6",
+    "@clerk/themes": "^2.4.15",
     "@studio-freight/lenis": "^1.0.42",
     "@types/ua-parser-js": "^0.7.39",
     "class-variance-authority": "^0.7.1",
+    "convex": "^1.26.2",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.541.0",
     "next": "15.5.0",

@@ -37,6 +37,9 @@ export interface ButtonProps extends VariantProps<typeof buttonVariants> {
   className?: string;
   showArrow?: boolean;
   isDark?: boolean;
+  onClick?: () => void;
+  children?: React.ReactNode;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -47,8 +50,11 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   size,
   isDark = false,
+  onClick,
+  children,
+  type = 'button',
 }) => {
-  // Determine which variant to use based on dark mode
+
   const effectiveVariant = isDark ? 'outlineLight' : variant || 'outline';
 
   const combinedClasses = buttonVariants({
@@ -57,15 +63,33 @@ const Button: React.FC<ButtonProps> = ({
     className,
   });
 
+  const content = children || text;
+
+  // If href is provided, render as Link
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={combinedClasses}
+        data-testid="button-component"
+      >
+        {content}
+        {showArrow && <ArrowRight className="text-2xl" />}
+      </Link>
+    );
+  }
+
+  // Otherwise render as button
   return (
-    <Link
-      href={href || ''}
+    <button
+      type={type}
+      onClick={onClick}
       className={combinedClasses}
       data-testid="button-component"
     >
-      {text}
+      {content}
       {showArrow && <ArrowRight className="text-2xl" />}
-    </Link>
+    </button>
   );
 };
 

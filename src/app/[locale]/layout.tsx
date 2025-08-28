@@ -11,7 +11,7 @@ import { fontVariables } from '@/lib/fonts';
 import { routing } from '@/i18n/config';
 import { env } from '@/lib/env';
 
-import { Header, Footer, ScrollToTop, SmoothScroll } from '@/components/ui';
+import { ClerkAuthProvider, ConvexClientProvider, Header, Footer, ScrollToTop, SmoothScroll } from '@/components/ui';
 import '../globals.css';
 
 const geistSans = Geist({
@@ -24,7 +24,6 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-// Generate metadata for each locale
 export async function generateMetadata({
   params,
 }: {
@@ -71,7 +70,6 @@ export const viewport: Viewport = {
   themeColor: '#F8F5EE',
 };
 
-// Generate static params for all supported locales
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({
     locale,
@@ -97,16 +95,20 @@ export default async function LocaleLayout({
         <body
           className={`${fontVariables} ${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          <NextIntlClientProvider messages={messages}>
-            <ThemeProvider>
-              <SmoothScroll>
-                <ScrollToTop />
-                <Header />
-                {children}
-                <Footer />
-              </SmoothScroll>
-            </ThemeProvider>
-          </NextIntlClientProvider>
+          <ClerkAuthProvider>
+            <ConvexClientProvider>
+              <NextIntlClientProvider messages={messages}>
+                <ThemeProvider>
+                  <SmoothScroll>
+                    <ScrollToTop />
+                    <Header />
+                    {children}
+                    <Footer />
+                  </SmoothScroll>
+                </ThemeProvider>
+              </NextIntlClientProvider>
+            </ConvexClientProvider>
+          </ClerkAuthProvider>
         </body>
       </html>
     );
@@ -117,7 +119,6 @@ export default async function LocaleLayout({
       message: (error as Error).message,
       stack: (error as Error).stack,
     });
-    // If there's an error loading messages, also trigger 404
     notFound();
   }
 }

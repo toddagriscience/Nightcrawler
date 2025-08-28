@@ -1,3 +1,5 @@
+// Copyright Todd LLC, All rights reserved.
+
 'use client';
 
 import { useState } from 'react';
@@ -12,6 +14,7 @@ import {
 import { Menu, X } from 'lucide-react';
 import { themeUtils } from '@/lib/theme';
 import { useTheme } from '@/context/ThemeContext';
+import { AuthButton } from '@/components/ui/auth';
 
 interface HeaderProps {
   alwaysGlassy?: boolean;
@@ -31,33 +34,27 @@ const Header: React.FC<HeaderProps> = ({
   const { isDark: contextIsDark } = useTheme();
   const t = useTranslations('header');
 
-  // Use prop isDark if provided, otherwise use context
   const isDark = propIsDark !== undefined ? propIsDark : contextIsDark;
 
-  // Get theme values for current mode
   const headerTheme = themeUtils.getComponentTheme('header', isDark);
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
     if (alwaysGlassy) return;
 
-    // Much slower, more staggered scroll transition
-    // Start transitioning at 20px, fully transitioned at 200px
     const scrollThreshold = 10;
     const fullTransitionThreshold = 50;
 
     if (latest > scrollThreshold) {
-      // Calculate linear progress (0 to 1)
       const linearProgress = Math.min(
         (latest - scrollThreshold) /
           (fullTransitionThreshold - scrollThreshold),
         1
       );
 
-      // Apply easing curve for more staggered effect (ease-out curve)
       const easedProgress = 1 - Math.pow(1 - linearProgress, 3);
 
       setScrollProgress(easedProgress);
-      setScrolled(easedProgress > 0.6); // Only set scrolled to true when 60% through transition
+      setScrolled(easedProgress > 0.6);
     } else {
       setScrollProgress(0);
       setScrolled(false);
@@ -79,20 +76,16 @@ const Header: React.FC<HeaderProps> = ({
     (menuOpen && typeof window !== 'undefined' && window.innerWidth < 768);
   const showWordmark = showGlassy;
 
-  // Create gradual background color based on scroll progress
   const getGradualBackground = () => {
     if (alwaysGlassy || menuOpen) return headerTheme.background;
 
-    // Extract RGB values from theme background (assumes rgba format)
     const bgColor = headerTheme.background;
-    // For rgba(0,0,0,0.1) format, increase the alpha based on scroll progress
     if (bgColor.includes('rgba')) {
       const match = bgColor.match(
         /rgba\((\d+),\s*(\d+),\s*(\d+),\s*([\d.]+)\)/
       );
       if (match) {
         const [, r, g, b, originalAlpha] = match;
-        // Ensure minimum alpha of 0, maximum of original alpha
         const newAlpha = Math.max(
           0,
           Math.min(
@@ -104,9 +97,8 @@ const Header: React.FC<HeaderProps> = ({
       }
     }
 
-    // Fallback for non-rgba colors - use opacity based approach
     if (scrollProgress <= 0) {
-      return 'rgba(0, 0, 0, 0)'; // Fully transparent
+      return 'rgba(0, 0, 0, 0)';
     }
 
     return bgColor;
@@ -261,8 +253,9 @@ const Header: React.FC<HeaderProps> = ({
               )}
             </AnimatePresence>
 
-            {/* Right: Get Started */}
+            {/* Right: Auth & Get Started */}
             <div className="flex items-center gap-4">
+              <AuthButton />
               <Link
                 href="/contact"
                 className="tracking-tight rounded-md p-1 footer-underline transition-all duration-300 ease-in-out items-center hidden md:flex cursor-pointer"
@@ -313,7 +306,7 @@ const Header: React.FC<HeaderProps> = ({
                       );
                     })}
 
-                    {/* Mobile Get Started */}
+                    {/* Mobile Auth & Get Started */}
                     <motion.div
                       initial={{ opacity: 0, x: -20 }}
                       animate={{
@@ -324,6 +317,7 @@ const Header: React.FC<HeaderProps> = ({
                       exit={{ opacity: 0, x: -20 }}
                       className="flex flex-col items-center gap-4 pt-4 border-t border-current/20"
                     >
+                      <AuthButton />
                       <Link
                         href="/contact"
                         onClick={() => setMenuOpen(false)}

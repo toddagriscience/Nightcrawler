@@ -118,6 +118,27 @@ NEXT_PUBLIC_PRODUCTION_DOMAIN=toddagriscience.com
 # AWS_S3_BUCKET=your-s3-bucket-name
 
 # ====================
+# CONVEX BACKEND
+# ====================
+
+# Convex deployment URL (required for Convex integration)
+# Get this from your Convex dashboard after running `npx convex dev`
+NEXT_PUBLIC_CONVEX_URL=https://your-deployment-name.convex.cloud
+
+# ====================
+# CLERK AUTHENTICATION
+# ====================
+
+# Clerk publishable key (required for authentication)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_Z3JlYXQtbG9uZ2hvcm4tNy5jbGVyay5hY2NvdW50cy5kZXYk
+
+# Clerk secret key (required for server-side operations)
+CLERK_SECRET_KEY=sk_test_vT2AZm1esO3rWKmb6bakgoInYDDC3ShSvB2RrP3UzX
+
+# Clerk JWT issuer domain (required for Convex auth)
+CLERK_JWT_ISSUER_DOMAIN=great-longhorn-7.clerk.accounts.dev
+
+# ====================
 # DEVELOPMENT & DEBUGGING
 # ====================
 
