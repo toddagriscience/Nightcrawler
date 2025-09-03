@@ -11,7 +11,7 @@
 :root {
   /* Font variables */
   --font-haas: var(--font-neue-haas), Arial, sans-serif;
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-neue-haas), 'Courier New', monospace;
 
   /* Shadcn/ui CSS variables mapped to Todd Agriscience theme */
   --background: #f8f5ee; /* Your cream background */
@@ -46,7 +46,7 @@
   --color-card: var(--card);
   --color-muted: var(--muted);
   --font-sans: var(--font-neue-haas), Arial, sans-serif;
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-neue-haas), 'Courier New', monospace;
 }
 
 @media (prefers-color-scheme: light) {

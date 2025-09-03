@@ -3,7 +3,6 @@
 import type { Metadata, Viewport } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { Geist, Geist_Mono } from 'next/font/google';
 import { notFound } from 'next/navigation';
 
 import { ThemeProvider } from '@/context/theme/ThemeContext';
@@ -14,16 +13,6 @@ import { fontVariables } from '@/lib/fonts';
 import { FadeIn, SmoothScroll, ThemeReset } from '@/components/common';
 import { Footer, Header } from '@/components/landing';
 import '../globals.css';
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 // Generate metadata for each locale
 export async function generateMetadata({
@@ -95,9 +84,7 @@ export default async function LocaleLayout({
 
     return (
       <html lang={locale}>
-        <body
-          className={`${fontVariables} ${geistSans.variable} ${geistMono.variable}`}
-        >
+        <body className={fontVariables}>
           <NextIntlClientProvider messages={messages}>
             <ThemeProvider>
               <ThemeReset />

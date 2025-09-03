@@ -1,8 +1,17 @@
 // Copyright Todd LLC, All rights reserved.
 
-// Mock next-intl/middleware to return a simple function
+// Mock next-intl/middleware to return a simple function that returns a Response-like object
 jest.mock('next-intl/middleware', () => {
-  return jest.fn(() => jest.fn(() => ({ status: 200 })));
+  return jest.fn(() =>
+    jest.fn(() => ({
+      headers: {
+        set: jest.fn(),
+      },
+      cookies: {
+        delete: jest.fn(),
+      },
+    }))
+  );
 });
 
 // Mock the routing config
@@ -25,8 +34,20 @@ describe('Middleware', () => {
   it('should call the middleware function', async () => {
     // eslint-disable-next-line @typescript-eslint/no-require-imports
     const middleware = require('./middleware').default;
-    const result = await middleware();
-    expect(result).toEqual({ status: 200 });
+
+    // Mock NextRequest object
+    const mockRequest = {
+      headers: {
+        get: jest.fn(() => null), // Default to no GPC header
+      },
+      cookies: {
+        has: jest.fn(() => false),
+      },
+    };
+
+    const result = await middleware(mockRequest);
+    expect(result).toBeDefined();
+    expect(result.headers).toBeDefined();
   });
 });
 
