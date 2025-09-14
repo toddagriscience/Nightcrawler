@@ -1,0 +1,227 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "websitePrivacyPolicy": "WEBSITE PRIVACY POLICY",
+    "effective": "Effective: July 20, 2025",
+    "supplements": {
+      "california": "Visitors that are residents of California should refer to our Website Privacy Policy Supplement for California Residents.",
+      "euUk": "Visitors or data subjects in receipt of our Services that are residents of the EEA, Switzerland and/or the UK should refer to our EU-UK Privacy Policy.",
+      "japan": "Visitors or data subjects in receipt of our Services that are residents of Japan should refer to our Japan Privacy Policy."
+    },
+    "commitment": {
+      "title": "OUR COMMITMENT TO PRIVACY",
+      "content": "Your privacy is important to Todd Agriscience Inc. and its affiliates (together, \"Todd,\" \"our,\" \"us,\" \"we\" or \"company\"). To better protect your privacy, we are providing information explaining our online information practices. We strive to keep your information anonymous.",
+      "description": "This Website Privacy Policy (this \"Privacy Policy\") describes how we gather and use personal information (which may be referred to in this Privacy Policy as \"personally identifiable information\", \"personal data\" or other similar terms) for visitors of this website. Please read this Privacy Policy carefully. If you do not agree with the processing of your personal information in accordance with this Privacy Policy, please do not access or otherwise use this website."
+    },
+    "informationCollection": {
+      "title": "THE INFORMATION WE COLLECT AND HOW WE USE IT",
+      "general": "We may collect various types of information from users of this website. For example, knowing how users use our website – tracking their movement through this website – helps us improve website design and usefulness. As a result, Todd's server collects general data pertaining to users, including the length of time spent on this website, the pages accessed while visiting the website and Internet Protocol (IP) addresses. Todd generally does not, however, collect any personally identifiable information such as names, home addresses or e-mail addresses from users of this website, unless a user submits such information to us via our \"Contact\" page.",
+      "usage": "To the extent that you provide us with any personally identifiable information through or in connection with this website, we may use such information for Todd's business purposes, but will not disclose any personally identifiable information about you to anyone, except as set out in this Privacy Policy, or as otherwise permitted or required by law or regulation.",
+      "security": "Unfortunately, the transmission of information and data via the Internet is not completely secure. Although we make an effort to protect your personal data, we cannot guarantee the security of any information or data transmitted to or through our website; any transmission of information or data by you to or through this website is at your sole risk."
+    },
+    "jobApplicants": {
+      "title": "THE INFORMATION WE COLLECT ABOUT JOB APPLICANTS",
+      "content": "We may collect various types of information from job applications through application forms, CVs or resumes, obtained from your passport or other identity documents, or collected through interviews or other forms of assessment (collectively, \"Application\"). We may also collect personal data about you from third parties, such as references supplied by former employers and social media profiles. We will seek information from third parties only once a formal application has been received."
+    },
+    "capacity": {
+      "title": "CAPACITY",
+      "content": "You represent to Todd that you have the authority to visit this website according to the Terms of Use. This website is only intended for individuals who are at least 18 years of age. We do not knowingly encourage or solicit visitors to this website who are under the age of 18 or knowingly collect personal information from anyone under the age of 18. If we learn we have collected or received personal information from an individual under the age of 18, we will delete that information."
+    },
+    "notifications": {
+      "title": "NOTIFICATION OF CHANGES",
+      "content": "We reserve the right to amend this Privacy Policy from time to time and for any reason, in our sole discretion, without notice, by updating this Privacy Policy. Accordingly, users are strongly encouraged to review our Privacy Policy regularly. If we decide to change our Privacy Policy, we will post those changes so our users are always aware of what information we collect, how we use it and under what circumstances, if any, we disclose it. If at any point we decide to collect personal information or use any collected information in a manner different from that stated at the time it was collected, we will notify users by posting changes on this page. We will use information only in accordance with the Privacy Policy under which the information was collected. Your continued access or use of this website following the posting of changes to this Privacy Policy means that you accept such revisions, changes and/or amendments. If you object to any of the changes to this Privacy Policy, please stop accessing this website. Please check this page frequently and review any changes to this Privacy Policy carefully so you are aware of any changes."
+    },
+    "miscellaneous": {
+      "title": "MISCELLANEOUS",
+      "termsReference": "The provisions in our Terms of Use are hereby incorporated by reference.",
+      "headings": "Headings and captions throughout this Privacy Policy are for convenience only and should not be considered part of this Privacy Policy. The word including means including without limitation."
+    },
+    "california": {
+      "title": "WEBSITE PRIVACY POLICY SUPPLEMENT FOR CALIFORNIA RESIDENTS",
+      "lastUpdated": "Last Updated: June 23, 2024",
+      "intro": "This California Website Privacy Policy supplements the Website Privacy Policy with respect to specific rights granted under the California Consumer Privacy Act of 2018, as amended (the \"CCPA\"), to natural person California residents and provides information regarding how such California residents can exercise their rights under the CCPA. This supplement is only relevant to you if you are a resident of California as determined in accordance with the CCPA. Information required to be disclosed to California residents under the CCPA regarding the collection of their personal information that is not set forth in this supplement is otherwise set forth above in the Website Privacy Policy. To the extent there is any conflict with the privacy requirements under the Gramm-Leach-Bliley Act and/or Regulation S-P (collectively, the \"GLB Rights\"), the GLB Rights shall apply.",
+      "categoriesIntro": "Categories of Personal Information We Collect: We collect limited types of personal information through our website and grower reporting portals, as well as through other electronic communications (e.g., emails), as applicable (collectively, the \"Website\"). The types of personal information we collect about you depends on the nature of your interaction with us. The categories of personal information we have collected from individuals on this Website over the last twelve (12) months include the following:",
+      "categories": {
+        "identifiers": {
+          "title": "Identifiers",
+          "description": "Name, contact details and address (including physical address, email address and Internet Protocol address), and other identification (including social security number, passport number and drivers' license or state identification card number).",
+          "collected": "YES"
+        },
+        "personalRecords": {
+          "title": "Additional data subject to Cal. Civ. Code § 1798.80",
+          "description": "Telephone number, signature, bank account number, other financial information (including accounts and transactions with other institutions and anti-money laundering information), and verification documentation and information regarding investors' status under various laws and regulations (including social security number, tax status, income and assets).",
+          "collected": "NO"
+        },
+        "protectedCharacteristics": {
+          "title": "Protected classification characteristics under California or federal law",
+          "description": "Date of birth, citizenship and birthplace.",
+          "collected": "NO"
+        },
+        "commercialInfo": {
+          "title": "Commercial information",
+          "description": "Account data and other information contained in any document provided by investors to authorized service providers (whether directly or indirectly), risk tolerance, transaction history, investment experience and investment activity, information regarding a potential and/or actual investment in the applicable fund(s), including ownership percentage, capital investment, income and losses, source of funds used to make the investment in the applicable fund(s).",
+          "collected": "NO"
+        },
+        "biometricInfo": {
+          "title": "Biometric information",
+          "description": "Imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, and voice recordings or keystroke patterns or rhythms, gait patterns or rhythms, and sleep, health, or exercise data that contains identifying information.",
+          "collected": "NO"
+        },
+        "internetActivity": {
+          "title": "Internet or other similar network activity",
+          "description": "Use of our website, fund data room and investor reporting portal (e.g., cookies, browsing history and/or search history), as well as information you provide to us when you correspond with us in relation to inquiries.",
+          "collected": "NO"
+        },
+        "geolocation": {
+          "title": "Geolocation data",
+          "description": "Physical location or movements.",
+          "collected": "NO"
+        },
+        "sensoryData": {
+          "title": "Sensory data",
+          "description": "Audio, electronic, visual, thermal, olfactory, or similar information.",
+          "collected": "NO"
+        },
+        "professionalInfo": {
+          "title": "Professional or employment-related information",
+          "description": "Current or past job history or performance evaluations.",
+          "collected": "NO"
+        },
+        "educationInfo": {
+          "title": "Non-public education information (per the Family Educational Rights and Privacy Act: 20 U.S.C. Section 1232g, 34 C.F.R. Part 99)",
+          "description": "Education records directly related to a student maintained by an educational institution or party acting on its behalf, such as grades, transcripts, class lists, student schedules, student identification codes, student financial information, or student disciplinary records.",
+          "collected": "NO"
+        },
+        "inferences": {
+          "title": "Inferences drawn from other personal information",
+          "description": "Profile reflecting a person's preferences, characteristics, psychological trends, predispositions, behavior, attitudes, intelligence, abilities, and aptitudes.",
+          "collected": "NO"
+        },
+        "sensitiveInfo": {
+          "title": "Sensitive Personal Information",
+          "description": "Social security, driver's license, state identification card, or passport numbers; account log-in, financial account, debit card, or credit card number in combination with any required security or access code, password, or credentials allowing access to an account; precise geolocation; racial or ethnic origin; religious or philosophical beliefs; union membership; genetic data; the contents of a consumer's mail, email, and text messages unless you are the intended recipient of the communication; biometric information for the purpose of uniquely identifying a consumer; and personal information collected and analyzed concerning a consumer's health, sex life, or sexual orientation.",
+          "collected": "NO"
+        }
+      },
+      "sensitiveDataUsage": {
+        "intro": "We do not collect or use sensitive personal information other than:",
+        "purposes": [
+          "To perform services, or provide goods, as would reasonably be expected by an average consumer who requests those goods or services;",
+          "As reasonably necessary and proportionate to detect security incidents that compromise the availability, authenticity, integrity, and confidentiality of stored or transmitted personal information;",
+          "As reasonably necessary and proportionate to resist malicious, deceptive, fraudulent, or illegal actions directed at us and to prosecute those responsible for such actions;",
+          "As reasonably necessary and proportionate to ensure the physical safety of natural persons;",
+          "For short-term, transient use (but not in a manner that discloses such information to another third party or is used to build a profile of you or otherwise alter your experience outside of your current interaction with us);",
+          "To perform services on behalf of our business.",
+          "To verify or maintain the quality or safety of a service or to improve, upgrade, or enhance such service or device; and",
+          "To collect or process sensitive personal information where such collection or processing is not for the purpose of inferring characteristics about a consumer."
+        ]
+      },
+      "minorPolicy": "We do not knowingly collect or solicit personal information from anyone under the age of 18.",
+      "purposes": {
+        "title": "Purposes for Collecting Personal Information: We may collect or disclose the personal information we collect about you for one or more of the following business or commercial purposes:",
+        "list": [
+          "Performing services for you;",
+          "Improving our Website and the products and services that we offer and notify you about changes to our products and services;",
+          "Communicating with you, including responding to requests for information submitted by you through our Website;",
+          "Keeping a record of your relationship with us;",
+          "Ongoing operations, administrative, accounting, reporting, account maintenance, and other processes;",
+          "Auditing and verifications related to investor interactions, including but not limited to, verifying the quality and effectiveness of services and compliance;",
+          "Maintaining the safety, security and integrity of our products and services, databases, technology assets and business, including detecting security incidents, protecting against malicious, deceptive, fraudulent, or illegal activity;",
+          "Complying with U.S., state, local and non-U.S. laws, rules and regulations."
+        ]
+      },
+      "retention": "We retain the categories of personal information set forth above in the \"Categories of Personal Information We Collect\" section of this Privacy Policy supplement only as long as is reasonably necessary for those purposes set forth above, except as may be required under applicable law, court order or government regulations.",
+      "disclosure": {
+        "intro": "Disclosure of Information: We do not share for the purpose of cross-context behavioral advertising or sell (as such terms are defined in the CCPA) any of the personal information we collect about you to third parties.",
+        "businessPurpose": "We disclose, or, during the past twelve (12) months, have disclosed personal information collected from you for a business purpose to the categories of third parties indicated in the chart below. We may also disclose your information to other parties as may be required by law or regulation, or in response to regulatory inquiries.",
+        "thirdParties": "Administrators, lenders, banks, auditors, law firms, governmental agencies or pursuant to legal process, self-regulatory organizations, consultants and placement agents."
+      },
+      "rights": {
+        "title": "Rights under the CCPA",
+        "deletion": {
+          "title": "Deletion Rights",
+          "content": "You have the right to request that we delete any of your personal information that we retain, subject to certain exceptions, including, but not limited to, our compliance with U.S., state, local and non-U.S. laws, rules and regulations. We will notify you in writing if we cannot comply with a specific request and provide an explanation of the reasons."
+        },
+        "disclosure": {
+          "title": "Disclosure and Access Rights",
+          "intro": "You have the right to request that we disclose to you certain information regarding our collection, use, disclosure and sale of personal information specific to you over the last twelve (12) months. Such information includes:",
+          "content": "",
+          "list": [
+            "The categories of personal information we collected about you;",
+            "The categories of sources from which the personal information is collected;",
+            "Our business or commercial purpose for collecting such personal information;",
+            "Categories of third parties with whom we disclose the personal information;",
+            "The specific pieces of personal information we have collected about you; and",
+            "Whether we disclosed your personal information to a third party, and if so, the categories of personal information that each recipient obtained."
+          ]
+        },
+        "correction": {
+          "title": "Correction Right",
+          "content": "You have the right to request that we correct any inaccuracies in the personal information that we retain, subject to certain statutory exceptions, including, but not limited to, our compliance with U.S., state, local and non-U.S. laws, rules and regulations. We will notify you in writing if we cannot comply with a specific request and provide an explanation of the reasons."
+        },
+        "noDiscrimination": {
+          "title": "No Discrimination",
+          "content": "We will not discriminate against you for exercising your rights under the CCPA, including by denying service, suggesting that you will receive, or charging, different rates for services or suggesting that you will receive, or providing, a different level or quality of service to you."
+        },
+        "exercise": {
+          "title": "How to Exercise Your Rights",
+          "content": "",
+          "verification": "We will contact you to confirm receipt of your request under the CCPA and request any additional information necessary to verify your request. We verify requests by matching information provided in connection with your request to information contained in our records. Depending on the sensitivity of the request and the varying levels of risk in responding to such requests (for example, the risk of responding to fraudulent or malicious requests), we may request further information or your investor portal access credentials, if applicable in order to verify your request. You may designate an authorized agent to make a request under the CCPA on your behalf, provided that you provide a signed agreement verifying such authorized agent's authority to make requests on your behalf, and we may verify such authorized person's identity using the procedures above. If we request you verify your request and we do not receive your response, we will pause processing your request until such verification is received."
+        }
+      }
+    },
+    "euUk": {
+      "title": "EU-UK PRIVACY NOTICE",
+      "lastUpdated": "Last Updated: June 29, 2023",
+      "intro": "This EU-UK Privacy Policy (this \"EU-UK Privacy Policy\") supplements (and in the case of conflict, takes precedence over) the general Privacy Policy, if and only to the extent that EU-UK Data Protection Legislation (as defined below) applies to our processing of your personal data in connection with this website. Information required to be disclosed under EU-UK Data Protection Legislation regarding the processing of your personal data that is not set forth in this EU-UK Privacy Policy is otherwise set forth in the general Privacy Policy above. If this EU-UK Privacy Policy applies, you have certain rights with respect to such personal data, as outlined below.",
+      "definitions": "For this EU-UK Privacy Policy, \"EU-UK Data Protection Legislation\" means all applicable legislation and regulations relating to the protection of personal data in force from time to time in the European Union (\"EU\"), the European Economic Area (\"EEA\"), the United Kingdom (\"UK\"), or the Cayman Islands, including the EU GDPR and the UK GDPR, and the terms \"data controller,\" \"data processor,\" \"data subject,\" \"personal data\" and \"processing\" in this EU-UK Privacy Policy shall be interpreted in accordance with the applicable EU-UK Data Protection Legislation. For the purposes of applicable EU-UK Data Protection Legislation, Todd and/or one or more of its affiliates will be the controller of any personal data collected by us.",
+      "scope": "This EU-UK Privacy Policy does not apply to any processing of personal data by or on behalf of Todd that is covered by a more specific privacy policy (including, without limitation, our employee and contractor privacy policies and our Service and/or Product User Agreement's privacy policies).",
+      "additionalInfo": {
+        "title": "ADDITIONAL INFORMATION REGARDING OUR USE OF YOUR PERSONAL DATA",
+        "content": "Our general Privacy Policy sets out the personal data that we collect (as described in the section headed \"THE INFORMATION WE COLLECT AND HOW WE USE IT\"). We do not collect any special categories of personal data about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership or information about your health or genetic or biometric data)."
+      },
+      "processing": {
+        "title": "PURPOSE OF PROCESSING",
+        "legal": "We rely on various legal bases under the EU-UK Data Protection Legislation in order to process your personal data, including our legitimate interests, contractual necessity, and as required by law. We use the personal data we collect to operate our business and perform essential business operations and provide you with the services and products we offer.",
+        "requirements": "If we require your personal data due to a legal requirement or obligation or in order to perform a contract with you, we will make you aware of this at the time we collect your personal data, and the possible consequences of you failing to provide this personal data. Failure to provide this data means that we cannot provide our services or products to you. In this case, we may have to cancel a product or service you have with us but we will notify you if this is the case at the time.",
+        "multipleBases": "Note that we may process your personal data on more than one legal basis depending on the specific purpose for which we are using your personal data.",
+        "purposes": "We will only use your personal data for the purposes for which we collected it, unless we reasonably consider that we need to use it for another reason and that reason is compatible with the original purpose. If we need to use your personal data for an unrelated purpose, we will notify you and explain the legal basis which allows us to do so.",
+        "automated": "No automated decision-making, including profiling, is used when processing your personal data.",
+        "disclosure": "Disclosure and Transfer of Personal Data If collected, your personal information may be shared with and processed by our affiliates, agents, and certain service providers, as necessary, to fulfill the purposes set out this Privacy Policy, including professional advisors and data hosting providers.",
+        "links": "Our website contains links to other websites which are not hosted or operated by us. These websites may use automated means to collect information regarding your use of the websites. This information is subject to the privacy policies or notices of the provider's website.",
+        "legal": "We reserve the right to disclose your personal information as required by law or legal process, or when we believe that disclosure is necessary or appropriate to protect our rights, prevent physical harm or financial loss, and/or comply with a judicial proceeding, court order, request from a regulator, national security, for the purposes of public importance or any other legal or investigatory process involving us. Should we, or any of our affiliated entities, be the subject of a takeover, divestment or acquisition, or otherwise sell or transfer all or a portion of our business or assets (including in the event of a reorganization, dissolution, or liquidation), we may disclose your personal information to the new owner of the relevant business and their advisors on the basis of our legitimate interest."
+      },
+      "sharing": {
+        "title": "SHARING AND TRANSFERS OF PERSONAL DATA",
+        "content": "Our general Privacy Policy sets out details of any personal data transfers (as described in the section headed \"DISCLOSURE AND TRANSFER OF PERSONAL DATA\"). To the extent any personal data is transferred from the EEA or UK to a destination outside the EEA or UK, we will take steps to ensure that your personal data is protected by appropriate organizational and security measures, and that any such transfers are only made in accordance with the EU-UK Data Protection Legislation (which may include implementing the EU standard contractual clauses and/or the UK International Data Transfer Addendum)."
+      },
+      "retention": {
+        "title": "RETENTION AND SECURITY OF PERSONAL DATA",
+        "security": "Todd and its affiliates consider the protection of personal data to be a sound business practice, and to that end, employ appropriate technical and organizational measures, including robust physical, electronic and procedural safeguards to protect personal data in their possession or under their control.",
+        "retention": "Personal data may be kept for as long as it is required for legitimate business purposes, to perform contractual obligations or, where longer, as long as is required to comply with applicable legal or regulatory obligations. Personal data will be retained throughout the life cycle of any investment in an applicable fund managed by Todd. However, some personal data will be retained after a data subject ceases to be an investor in such fund."
+      },
+      "marketing": {
+        "title": "DIRECT COMMUNICATIONS",
+        "content": "We may send you direct marketing communications where we have obtained your prior consent to keep you informed of our products and services in which you might be interested, or where we have an existing relationship with you and we wish to contact you about similar products or services in which you may be interested.",
+        "optOut": {
+          "intro": "You have the right to ask us not to send you marketing communications. You can also let us know at any time that you wish to change your mind and to start receiving such communications. You can do this:",
+          "methods": [
+            "by replying directly to the marketing communication; or",
+            "at any time by contacting us (see the section headed \"CONTACT US\" above)."
+          ]
+        }
+      },
+      "rights": {
+        "title": "YOUR RIGHTS UNDER EU-UK DATA PROTECTION LEGISLATION",
+        "list": "Subject to applicable EU-UK Data Protection Legislation, you may have the following rights under EU-UK Data Protection Legislation: to obtain information about, or (where applicable) withdraw any consent given in relation to, the processing of your personal data; to access and receive a copy of your personal data; to request rectification of your personal data; to request erasure of your personal data; to exercise your right to data portability; and to exercise your right not to be subject to automated decision-making. Please note that the right to erasure is not absolute, and it may not always be possible to erase personal data on request, including where the personal data must be retained to comply with a legal obligation.",
+        "verification": "We may need to request specific information from you to help us confirm your identity and ensure your right to access your personal data (or to exercise any of your other rights). This is a security measure to ensure that personal data is not disclosed to any person who has no right to receive it. We may also contact you to ask you for further information in relation to your request to speed up our response."
+      },
+      "complaints": {
+        "title": "COMPLAINTS",
+        "intro": "Should you wish to lodge a complaint with regards to how your personal data has been processed by us:",
+        "uk": "under the UK GDPR and/or Data Protection Act 2018, please contact the UK Information Commissioner's Office;",
+        "eu": "under the EU GDPR, please contact your local supervisory authority in particular in the EU Member State of your habitual residence, place of work, or place of the infringement, concern or complaint."
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "accessibility": {
+    "title": "Accessibility",
+    "subtitle": "Website Accessibility Statement",
+    "standards": "We are commmitted to ensuring that guests with disabilities have access to our services and products, including those offered through our website, todd.com and mobile applications. As such, we strive to adhere to the Web Content Accessibility Guidelines 2.0 Levels A and AA, a set of guidelines developed by the World Wide Web Consortium and used to ensure that digital content is accssible to everyone. We also work with advocacy groups, accessibility and usability consultants, and guests to make sure that our website and mobile applications function properly.",
+    "improvements": {
+      "description": "We are always learning and looking for ways to improve accessibility. Here are some steps we’ve taken to improve access to out website mobile applications.",
+      "textEquivalents": {
+        "title": "Text Equivalents",
+        "content": "We provide alternative text details for appropriate images and other non-text elements."
+      },
+      "keyboardAccess": {
+        "title": "Full Keyboard Access",
+        "content": "Our website is built so that it can be accessed using a keyboard."
+      },
+      "siteConsistency": {
+        "title": "Site Consistency",
+        "content": "We are consistent in the way we build our website and mobile applications so that they function the same way every time you interact with them."
+      },
+      "siteStructure": {
+        "title": "Site Structure",
+        "content": "We use appropriate headings, lists, paragraphs, style sheets and other formatting features so that guests can easily use the website with assistive technology."
+      },
+      "links": {
+        "title": "Links",
+        "content": "Many links have title attributes which describes the link in greater detail, unless the text of the link already fully describes the target."
+      }
+    },
+    "cta": "Please contact us if you have any feedback or questions regarding our website or mobile application."
+  }
+}
