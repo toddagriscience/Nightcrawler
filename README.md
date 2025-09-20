@@ -177,7 +177,7 @@ src/
 │   │   ├── footer/        # Landing page footer
 │   │   ├── header/        # Landing page header with navigation
 │   │   ├── hero/          # Hero section component
-│   │   ├── news-highlight-card/ # Combined news + quote card
+│   │   ├── news-highlights/ # Combined news + quote card
 │   │   ├── page/          # Landing page layout
 │   │   ├── quote/         # Quote/About section
 │   │   └── scroll-shrink-wrapper/ # Scroll animation wrapper

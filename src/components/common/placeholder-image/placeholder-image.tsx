@@ -60,10 +60,9 @@ const PlaceholderImage = ({
   if (imageError) {
     return (
       <div
-        className={`flex items-center justify-center ${
+        className={`max-w-[${width}px] max-h-[${height}px] flex h-[70vw] w-[70vw] items-center justify-center px-1 ${
           isDark ? 'bg-gray-700 text-gray-300' : 'bg-gray-200 text-gray-500'
         } ${className}`}
-        style={{ width, height }}
         role="img"
         aria-label={alt}
       >
@@ -77,11 +76,12 @@ const PlaceholderImage = ({
 
   return (
     <Image
+      data-testid="rendered image"
       src={src}
       alt={alt}
       width={width}
       height={height}
-      className={className}
+      className={className + ` max-w-[${width}px] max-h-[${height}px]`}
       onError={handleError}
       onLoad={() => setImageError(false)}
     />

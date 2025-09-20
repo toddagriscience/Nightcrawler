@@ -4,7 +4,8 @@
 
 import { useTheme } from '@/context/theme/ThemeContext';
 import { useCallback, useEffect, useRef } from 'react';
-import { Hero, NewsHighlightCard, ScrollShrinkWrapper } from '../';
+import { Hero, ScrollShrinkWrapper } from '../';
+import NewsHighlights from '../news-highlights/news-highlights';
 
 /**
  * Landing page component
@@ -71,7 +72,7 @@ export default function LandingPage() {
       </div>
       <div ref={newsCarouselRef}>
         <ScrollShrinkWrapper>
-          <NewsHighlightCard />
+          <NewsHighlights />
         </ScrollShrinkWrapper>
       </div>
     </>

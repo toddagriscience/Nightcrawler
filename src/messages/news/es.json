@@ -1,0 +1,130 @@
+{
+  "news": {
+    "subtitle": "Todd Newsroom",
+    "highlighted": "Highlighted",
+    "latestNews": "Latest News"
+  },
+  "articleExcerpts": {
+    "toddAnniversary": {
+      "title": "Todd Anniversary: From Research to Reality",
+      "date": "2025-05-31",
+      "excerpt": "Blank",
+      "link": "https://www.prnewswire.com/news-releases/todd-anniversary-from-research-to-reality-302469963.html",
+      "source": "PR Newswire",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "celebratingTransformation": {
+      "title": "Celebrating Transformation in Agriculture: Todd's New Offers",
+      "date": "2025-05-31",
+      "excerpt": "Blank",
+      "link": "https://investorshangout.com/celebrating-transformation-in-agriculture-todds-new-offers-295609-/",
+      "source": "Investor Hangout",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "regenerativeSeedsApril": {
+      "title": "Todd Introduces The World's First Regenerative Vegetable and Flower Seeds",
+      "date": "2025-04-03",
+      "excerpt": "Blank",
+      "link": "https://www.seedtoday.com/article/1089709/todd-introduces-the-worlds-first-regenerative-vegetable-and-flower-seeds",
+      "source": "Seed Today",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "partnershipAmbrook": {
+      "title": "Todd Announces Partnership with Ambrook",
+      "date": "2025-04-16",
+      "excerpt": "Blank",
+      "link": "",
+      "source": "none",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "regenerativeSeedLaunch": {
+      "title": "Todd's Groundbreaking Regenerative Seed Products Launch",
+      "date": "2025-03-31",
+      "excerpt": "Blank",
+      "link": "https://investorshangout.com/todds-groundbreaking-regenerative-seed-products-launch-255229-/",
+      "source": "Investor Hangout",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "regenerativeSeedsMarch": {
+      "title": "Todd Introduces The World's First Regenerative Vegetable and Flower Seeds",
+      "date": "2025-03-31",
+      "excerpt": "Blank",
+      "link": "https://www.prnewswire.com/news-releases/todd-introduces-the-worlds-first-regenerative-vegetable-and-flower-seeds-302415741.html",
+      "source": "PR Newswire",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "pipelineToProspect": {
+      "title": "From Pipeline to Prospect: Inside Todd Recruitment",
+      "date": "2025-03-07",
+      "excerpt": "Blank",
+      "link": "https://medium.com/@toddagriscience/from-pipeline-to-prospect-inside-todd-recruitment-4a6b6c123a75",
+      "source": "Medium",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "partnershipWhyRegenerative": {
+      "title": "Todd Announces Partnership with Why Regenerative",
+      "date": "2024-11-01",
+      "excerpt": "Blank",
+      "link": "",
+      "source": "None",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "partnershipFarmlink": {
+      "title": "Todd Announces Partnership with Farmlink Project",
+      "date": "2024-10-29",
+      "excerpt": "Blank",
+      "link": "articles/farmlink-project",
+      "source": "None",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "launchToddAgriscience": {
+      "title": "Vincent Todd Launches Todd Agriscience to Lead Sustainable Farming Innovations",
+      "date": "2024-06-03",
+      "excerpt": "Blank",
+      "link": "https://igrownews.com/vincent-todd-launches-todd-agriscience-to-lead-sustainable-farming-innovations/",
+      "source": "iGrow News",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    },
+    "introToddAgriscience": {
+      "title": "Vincent Todd Announces the Introduction of Todd Agriscience",
+      "date": "2024-06-01",
+      "excerpt": "Blank",
+      "link": "https://www.prnewswire.com/news-releases/vincent-todd-announces-the-introduction-of-todd-agriscience-302161119.html",
+      "source": "PR Newswire",
+      "image": {
+        "url": "/placeholder.svg",
+        "alt": "something"
+      }
+    }
+  }
+}
