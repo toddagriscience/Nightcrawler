@@ -1,0 +1,110 @@
+{
+  "whatWeDo": {
+    "title": "Lo Que Hacemos",
+    "subtitle": "Transformando la agricultura a través de soluciones innovadoras y prácticas sostenibles",
+    "offerings": {
+      "title": "Nuestros Servicios",
+      "description": "Todd proporciona un ecosistema holístico desde la gestión del suelo hasta la comercialización de productos, incluyendo un análisis holístico de la toxicidad del suelo. Todo para ayudar a las granjas a mejorar la salud del suelo e implementar soluciones rápidamente.",
+      "services": {
+        "soilRemineralization": {
+          "title": "Remineralización del Suelo",
+          "description": "",
+          "icon": "Sprout"
+        },
+        "seedProducts": {
+          "title": "Productos de Semillas",
+          "description": "",
+          "icon": "Leaf"
+        },
+        "soilConservation": {
+          "title": "Conservación del Suelo",
+          "description": "",
+          "icon": "Mountain"
+        },
+        "cropProduction": {
+          "title": "Producción de Cultivos",
+          "description": "",
+          "icon": "WheatOff"
+        },
+        "diseaseInsectMitigation": {
+          "title": "Mitigación de Enfermedades e Insectos",
+          "description": "",
+          "icon": "Bug"
+        },
+        "operationsManagement": {
+          "title": "Gestión de Operaciones",
+          "description": "",
+          "icon": "Settings"
+        },
+        "nopDemeterIntegrity": {
+          "title": "Integridad NOP y Demeter",
+          "description": "",
+          "icon": "ShieldCheck"
+        },
+        "produceSafety": {
+          "title": "Seguridad de Productos",
+          "description": "",
+          "icon": "Shield"
+        },
+        "expansionMarketEntry": {
+          "title": "Expansión y Entrada al Mercado",
+          "description": "",
+          "icon": "TrendingUp"
+        },
+        "dtcCSAMarketing": {
+          "title": "Marketing DTC y CSA",
+          "description": "",
+          "icon": "Store"
+        }
+      }
+    },
+    "impact": {
+      "title": "Nuestro Impacto",
+      "description": "Todd se asocia con granjas para transformar el suelo y aumentar el valor con nuestro distintivo conjunto de herramientas de gestión agrícola.",
+      "companies": {
+        "title": "Empresas que Hemos Ayudado",
+        "description": "Lista alfabética de empresas con las que nos hemos asociado",
+        "list": [
+          "Acme Farms",
+          "Bright Future",
+          "Cosmic Technologies",
+          "Delta Systems",
+          "Echo Innovations",
+          "Frontier Labs"
+        ]
+      },
+      "stories": {
+        "acmeInc": {
+          "title": "Acme Inc",
+          "description": "",
+          "date": "Jun 2023"
+        },
+        "brightFuture": {
+          "title": "Bright Future",
+          "description": "",
+          "date": "May 2023"
+        },
+        "cosmicTechnologies": {
+          "title": "Cosmic Technologies",
+          "description": "",
+          "date": "Abr 2023"
+        },
+        "deltaSystems": {
+          "title": "Delta Systems",
+          "description": "",
+          "date": "Feb 2023"
+        },
+        "echoInnovations": {
+          "title": "Echo Innovations",
+          "description": "",
+          "date": "Nov 2022"
+        },
+        "frontierLabs": {
+          "title": "Frontier Labs",
+          "description": "",
+          "date": "Ago 2022"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "whatWeDo": {
+    "title": "What We Do",
+    "subtitle": "Transforming agriculture through innovative solutions and sustainable practices",
+    "offerings": {
+      "title": "Our Offerings",
+      "description": "Todd provides a holistic ecosystem from soil management to produce marketing, including a holistic analysis of soil toxicity. All to help farms improve soil health and quickly implement solutions.",
+      "services": {
+        "soilRemineralization": {
+          "title": "Soil Remineralization",
+          "description": "",
+          "icon": "Sprout"
+        },
+        "seedProducts": {
+          "title": "Seed Products",
+          "description": "",
+          "icon": "Leaf"
+        },
+        "soilConservation": {
+          "title": "Soil Conservation",
+          "description": "",
+          "icon": "Mountain"
+        },
+        "cropProduction": {
+          "title": "Crop Production",
+          "description": "",
+          "icon": "WheatOff"
+        },
+        "diseaseInsectMitigation": {
+          "title": "Disease & Insect Mitigation",
+          "description": "",
+          "icon": "Bug"
+        },
+        "operationsManagement": {
+          "title": "Operations Management",
+          "description": "",
+          "icon": "Settings"
+        },
+        "nopDemeterIntegrity": {
+          "title": "NOP & Demeter Integrity",
+          "description": "",
+          "icon": "ShieldCheck"
+        },
+        "produceSafety": {
+          "title": "Produce Safety",
+          "description": "",
+          "icon": "Shield"
+        },
+        "expansionMarketEntry": {
+          "title": "Expansion & Market Entry",
+          "description": "",
+          "icon": "TrendingUp"
+        },
+        "dtcCSAMarketing": {
+          "title": "DTC & CSA Marketing",
+          "description": "",
+          "icon": "Store"
+        }
+      }
+    },
+    "impact": {
+      "title": "Our Impact",
+      "description": "Todd partners with farms to transform soil and increase value with our distinctive farm management toolkit.",
+      "companies": {
+        "title": "Partners",
+        "description": "Alphabetical list of companies we've partnered with",
+        "list": [
+          "Acme Farms",
+          "Bright Future",
+          "Cosmic Technologies",
+          "Delta Systems",
+          "Echo Innovations",
+          "Frontier Labs"
+        ]
+      },
+      "stories": {
+        "acmeInc": {
+          "title": "Acme Inc",
+          "description": "",
+          "date": "Jun 2023"
+        },
+        "brightFuture": {
+          "title": "Bright Future",
+          "description": "",
+          "date": "May 2023"
+        },
+        "cosmicTechnologies": {
+          "title": "Cosmic Technologies",
+          "description": "",
+          "date": "Apr 2023"
+        },
+        "deltaSystems": {
+          "title": "Delta Systems",
+          "description": "",
+          "date": "Feb 2023"
+        },
+        "echoInnovations": {
+          "title": "Echo Innovations",
+          "description": "",
+          "date": "Nov 2022"
+        },
+        "frontierLabs": {
+          "title": "Frontier Labs",
+          "description": "",
+          "date": "Aug 2022"
+        }
+      }
+    }
+  }
+}
