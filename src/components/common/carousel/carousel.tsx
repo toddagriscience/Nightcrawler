@@ -8,6 +8,15 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import CarouselProps from './types/carousel';
 
 /**
+ * Required for setAlign in the Carousel function to operate properly. Importing AlignmentOptionType directly from Embla doesn't work for whatever reason.
+ */
+type EmblaAlignType =
+  | 'start'
+  | 'center'
+  | 'end'
+  | ((viewSize: number, snapSize: number, index: number) => number);
+
+/**
  * A responsive carousel component built with Embla Carousel.
  *
  * Features:
@@ -35,21 +44,15 @@ import CarouselProps from './types/carousel';
  * </Carousel>
  * ```
  */
-const Carousel = ({
-  children,
-  loop = true,
-  className = '',
-  showDots = true,
-}: CarouselProps) => {
-  const [slidesToScroll, setSlidesToScroll] = useState(1);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+const Carousel = ({ children, loop = true, className = '' }: CarouselProps) => {
+  const [align, setAlign] = useState<EmblaAlignType>('center');
 
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop,
       watchDrag: false,
-      slidesToScroll,
+      slidesToScroll: 1,
+      align,
     },
     []
   );
@@ -57,49 +60,28 @@ const Carousel = ({
   const prevBtnRef = useRef<HTMLButtonElement>(null);
   const nextBtnRef = useRef<HTMLButtonElement>(null);
 
-  const updateSlidesToScroll = useCallback(() => {
+  const updateAlignment = useCallback(() => {
     if (typeof window === 'undefined') return;
 
     const width = window.innerWidth;
 
     // Calculate slides to scroll based on screen size
     if (width < 768) {
-      // Mobile/Tablet: scroll 1 item at a time
-      setSlidesToScroll(1);
+      setAlign('center');
     } else {
-      // Desktop: scroll 2 items at a time
-      setSlidesToScroll(2);
+      setAlign('start');
     }
   }, []);
 
   const handleResize = useCallback(() => {
-    updateSlidesToScroll();
-  }, [updateSlidesToScroll]);
-
-  const onSelect = useCallback(() => {
-    if (emblaApi) {
-      setSelectedIndex(emblaApi.selectedScrollSnap());
-    }
-  }, [emblaApi]);
+    updateAlignment();
+  }, [updateAlignment]);
 
   useEffect(() => {
-    updateSlidesToScroll();
+    updateAlignment();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [updateSlidesToScroll, handleResize]);
-
-  useEffect(() => {
-    if (emblaApi) {
-      // Set up scroll snaps and selection tracking
-      setScrollSnaps(emblaApi.scrollSnapList());
-      setSelectedIndex(emblaApi.selectedScrollSnap());
-
-      emblaApi.on('select', onSelect);
-      return () => {
-        emblaApi.off('select', onSelect);
-      };
-    }
-  }, [emblaApi, onSelect]);
+  }, [updateAlignment, handleResize]);
 
   const scrollPrev = () => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -109,48 +91,34 @@ const Carousel = ({
     if (emblaApi) emblaApi.scrollNext();
   };
 
-  const scrollTo = (index: number) => {
-    if (emblaApi) emblaApi.scrollTo(index);
-  };
-
   return (
-    <div className={`relative ${className}`}>
-      <div className="relative overflow-hidden" ref={emblaRef}>
-        <div className="embla__container flex w-full">{children}</div>
+    <div className={`relative ${className} h-min md:h-max md:w-max mb-8`}>
+      <div className="flex max-w-[600px] md:max-w-full max-h-[600px] h-[70vw] md:w-[95vw] w-[70vw] justify-between mx-auto md:mx-0 absolute mt-4 left-0 right-0">
         <button
           onClick={scrollPrev}
           ref={prevBtnRef}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 rounded-full hover:cursor-pointer duration-300 ease-in-out transition-all p-1 bg-black/10 hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20"
+          className="absolute top-1/2 left-0 z-10 -translate-y-1/2 transform rounded-full bg-black/10 p-1 transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20"
           aria-label="Previous slide"
+          data-testid="left-button"
         >
           <ArrowLeft className="text-foreground" />
         </button>
         <button
           onClick={scrollNext}
           ref={nextBtnRef}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 rounded-full hover:cursor-pointer duration-300 ease-in-out transition-all p-1 bg-black/10 hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20"
+          className="absolute top-1/2 right-0 z-10 -translate-y-1/2 transform rounded-full bg-black/10 p-1 transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20"
           aria-label="Next slide"
+          data-testid="right-button"
         >
           <ArrowRight className="text-foreground" />
         </button>
       </div>
-      {showDots && scrollSnaps.length > 1 && (
-        <div className="flex justify-center space-x-3 mt-8 px-4 pb-2">
-          {scrollSnaps.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => scrollTo(index)}
-              className={`relative rounded-full transition-all duration-300 ease-in-out hover:cursor-pointer ${
-                index === selectedIndex
-                  ? 'w-8 h-2 bg-foreground'
-                  : 'w-2 h-2 bg-foreground/40'
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-              aria-pressed={index === selectedIndex}
-            />
-          ))}
-        </div>
-      )}
+      <div
+        className="mx-auto w-[80vw] md:w-[95vw] overflow-hidden"
+        ref={emblaRef}
+      >
+        <div className="embla__container flex w-full">{children}</div>
+      </div>
     </div>
   );
 };

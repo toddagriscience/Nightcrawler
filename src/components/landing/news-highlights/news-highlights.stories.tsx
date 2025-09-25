@@ -2,15 +2,15 @@
 
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
-import NewsHighlightCard from './news-highlight-card';
+import NewsHighlights from './news-highlights';
 import {
   storybookControls,
   storybookArgs,
 } from '../../../../.storybook/utils/storybookControls';
 
 const meta = {
-  title: 'Landing/NewsHighlightCard',
-  component: NewsHighlightCard,
+  title: 'Landing/NewsHighlights',
+  component: NewsHighlights,
   parameters: {
     layout: 'fullscreen',
   },
@@ -26,7 +26,7 @@ const meta = {
     isDark: false,
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof NewsHighlightCard>;
+} satisfies Meta<typeof NewsHighlights>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

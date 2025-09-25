@@ -1,7 +1,7 @@
 // Copyright Todd LLC, All rights reserved.
 
 import { screen, renderWithAct } from '@/test/test-utils';
-import NewsHighlightCard from './news-highlight-card';
+import NewsHighlights from './news-highlights';
 import '@testing-library/jest-dom';
 
 // Mock embla-carousel-react
@@ -27,9 +27,9 @@ jest.mock('embla-carousel-react', () => {
   };
 });
 
-describe('NewsHighlightCard', () => {
+describe('NewsHighlights', () => {
   it('renders without crashing', async () => {
-    await renderWithAct(<NewsHighlightCard />);
+    await renderWithAct(<NewsHighlights />);
     const sections = screen.getAllByRole('region');
     const newsSection = sections.find(
       (section) => section.getAttribute('id') === 'news-carousel'
@@ -38,14 +38,14 @@ describe('NewsHighlightCard', () => {
   });
 
   it('displays the news highlights heading', async () => {
-    await renderWithAct(<NewsHighlightCard />);
+    await renderWithAct(<NewsHighlights />);
     const heading = screen.getByRole('heading', { name: 'News Highlights' });
     expect(heading).toBeInTheDocument();
     expect(heading).toHaveTextContent('News Highlights');
   });
 
   it('renders View All links with correct href', async () => {
-    await renderWithAct(<NewsHighlightCard />);
+    await renderWithAct(<NewsHighlights />);
     const viewAllLinks = screen
       .getAllByTestId('button-component')
       .filter((link) => link.getAttribute('href') === '/news');
@@ -53,17 +53,15 @@ describe('NewsHighlightCard', () => {
   });
 
   it('displays news articles from JSON data', async () => {
-    await renderWithAct(<NewsHighlightCard />);
+    await renderWithAct(<NewsHighlights />);
     expect(
-      screen.getByText(
-        'Todd Announces Partnership with Agricultural Innovation Lab'
-      )
+      screen.getByText('Todd Anniversary: From Research to Reality')
     ).toBeInTheDocument();
-    expect(screen.getByText(/Journal.*Apr 15, 2025/)).toBeInTheDocument();
+    expect(screen.queryAllByText(/2025-05-31/)).toHaveLength(2);
   });
 
   it('renders normally without isLoading prop', async () => {
-    await renderWithAct(<NewsHighlightCard />);
+    await renderWithAct(<NewsHighlights />);
     const sections = screen.getAllByRole('region');
     const newsSection = sections.find(
       (section) => section.getAttribute('id') === 'news-carousel'

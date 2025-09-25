@@ -41,31 +41,33 @@ const NewsCard = ({
   image,
   source,
   date,
-  headline,
+  excerpt,
   isDark = false,
   className = '',
-  link = '/news',
+  link,
+  title,
 }: NewsCardProps) => {
   return (
     <div
-      className={`min-w-[90%] md:min-w-[45%] lg:min-w-[30%] max-w-full px-4 py-4 font-light transition-colors duration-300 text-foreground ${className}`}
+      className={`text-foreground md:mr-4 max-w-[600px] px-1 py-4 font-light transition-colors duration-300  ${className}`}
     >
-      <Link href={link}>
-        <div className="rounded-xl overflow-hidden bg-transparent">
+      <Link href={link} className="mb-16">
+        <div className="rounded-xl bg-transparent">
           <PlaceholderImage
-            src={image}
-            alt={headline}
-            width={800}
+            src={image.url}
+            alt={image.alt}
+            width={600}
             height={600}
-            className="w-full h-auto object-cover"
+            className="h-[70vw] w-[70vw]"
             fallbackText="News Image"
             isDark={isDark}
           />
           <div className="p-4">
-            <p className="text-xl mb-1">
+            <h2>{title}</h2>
+            <p className="mb-1 text-xl">
               {source} <span className="mx-1">•</span> {date}
             </p>
-            <h3 className="text-2xl">{headline}</h3>
+            <h3 className="text-xl">{excerpt}</h3>
           </div>
         </div>
       </Link>

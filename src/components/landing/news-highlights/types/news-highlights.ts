@@ -5,7 +5,7 @@
  * @property {React.RefObject<HTMLDivElement>} carouselRef - The carousel reference
  * @property {boolean} isDark - Whether the theme is dark
  */
-export interface NewsHighlightCardProps {
+export interface NewsHighlightsProps {
   carouselRef?: React.RefObject<HTMLDivElement>;
   isDark?: boolean;
 }

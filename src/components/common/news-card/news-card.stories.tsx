@@ -12,8 +12,18 @@ const meta = {
   },
   argTypes: {
     image: {
+      url: {
+        control: 'text',
+        description: 'Image URL for the news card',
+      },
+      alt: {
+        control: 'text',
+        description: 'Image alt for the news card',
+      },
+    },
+    link: {
       control: 'text',
-      description: 'Image URL for the news card',
+      description: 'Slug for article',
     },
     source: {
       control: 'text',
@@ -23,7 +33,7 @@ const meta = {
       control: 'text',
       description: 'Publication date',
     },
-    headline: {
+    excerpt: {
       control: 'text',
       description: 'News headline',
     },
@@ -33,11 +43,12 @@ const meta = {
     },
   },
   args: {
-    image: '/images/placeholder.jpg',
+    image: { url: '/images/placeholder.jpg', alt: '' },
     source: 'Todd Journal',
     date: 'Apr 15, 2025',
-    headline: 'Revolutionary Advances in Sustainable Agriculture Technology',
+    excerpt: 'Revolutionary Advances in Sustainable Agriculture Technology',
     isDark: false,
+    link: 'revolutionary-advances-insustainable-agriculture-tech',
   },
   tags: ['autodocs'],
 } satisfies Meta<typeof NewsCard>;
@@ -46,6 +57,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  args: meta,
   decorators: [
     (Story: React.ComponentType, context) => {
       const isDark = context.args.isDark;
@@ -66,9 +78,7 @@ export const Default: Story = {
 };
 
 export const DarkMode: Story = {
-  args: {
-    isDark: true,
-  },
+  args: meta,
   decorators: [
     (Story: React.ComponentType) => (
       <div
@@ -86,10 +96,7 @@ export const DarkMode: Story = {
 };
 
 export const LongHeadline: Story = {
-  args: {
-    headline:
-      'Todd Agriscience Announces Groundbreaking Partnership with Leading Agricultural Research Institute to Develop Next-Generation Sustainable Farming Solutions',
-  },
+  args: meta,
   decorators: [
     (Story: React.ComponentType, context) => {
       const isDark = context.args.isDark;
