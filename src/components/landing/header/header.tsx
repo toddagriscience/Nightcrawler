@@ -2,19 +2,19 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useTheme } from '@/context/theme/ThemeContext';
 import { Link, usePathname } from '@/i18n/config';
-import { useTranslations } from 'next-intl';
 import {
   AnimatePresence,
   motion,
-  useScroll,
   useMotionValueEvent,
+  useScroll,
 } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { useTheme } from '@/context/theme/ThemeContext';
-import { HeaderProps } from './types/header';
+import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 import { headerTheme } from './theme/header';
+import { HeaderProps } from './types/header';
 
 /**
  * Header component
@@ -77,6 +77,7 @@ const Header: React.FC<HeaderProps> = ({
     { href: '/what-we-do', label: t('navigation.whatWeDo') },
     { href: '/impact', label: t('navigation.impact') },
     { href: '/news', label: t('navigation.news') },
+    { href: '/careers', label: t('navigation.careers') },
   ];
 
   const showGlassy =
